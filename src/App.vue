@@ -1,20 +1,24 @@
 <template>
   <v-app>
-   <AppHeader></AppHeader>
+    <AppHeader></AppHeader>
+    <AppNavBar></AppNavBar>
   </v-app>
 </template>
 
 <script>
-import AppHeader from '@/components/AppHeader.vue'
-export default {
-  name: 'App',
+  import AppHeader from '@/components/AppHeader.vue'
+  import AppNavBar from '@/components/AppNavBar.vue'
 
-  components: {
-  AppHeader,
-  },
+  export default {
+    name: 'App',
 
-  data: () => ({
-    //
-  }),
-};
+    components: {
+      AppHeader,
+      AppNavBar,
+    },
+
+    data: () => ({
+      //
+    }),
+  };
 </script>
